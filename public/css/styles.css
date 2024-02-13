@@ -1,0 +1,40 @@
+#header {
+  top: 0;
+  display: inline-block;
+  font-family: Open Sans;
+}
+
+#main {
+  font-family: Open Sans;
+}
+
+#contents {
+  width: 100%;
+  padding-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.thumbnail{
+  height: 191.986px;
+  width: 341.319px;
+  border-radius: 12px;
+}
+
+.content-container {
+  width: 341.319px;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 40px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content-title {
+  font-weight: bold;
+}
+
+.content-description {
+  line-height: 5px;
+}
