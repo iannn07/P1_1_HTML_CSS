@@ -18,6 +18,12 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #0f0f0f;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .start {
@@ -174,7 +180,6 @@ p {
   border-radius: 40px;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
-  margin-right: 24px;
 }
 
 .notification-button:hover {
@@ -189,10 +194,31 @@ p {
   height: 23px;
 }
 
+.notification-container {
+  margin-right: 24px;
+  position: relative;
+}
+
+.notification-count {
+  display: inline-block;
+  color: #f1f1f1;
+  position: absolute;
+  border: 2px solid #0f0f0f;
+  border-radius: 22px;
+  background-color: #ca0709;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  padding: 0 4px;
+  top: 1px;
+  right: -4px;
+}
+
 .profile-icon {
   height: 27px;
   border-radius: 40px;
-  margin-right: 40px;
+  margin-right: 12px;
   cursor: pointer;
   border: 1px solid transparent;
 }
@@ -201,7 +227,7 @@ p {
   border-color: #243eb6;
 }
 
-/* HANDLING SMALL SCREEN */
+/* HANDLING SMALL SCREEN - HEADER*/
 @media (max-width: 800px) {
   .start {
     display: flex;
@@ -274,10 +300,67 @@ p {
   }
 }
 
+/* SIDEBAR SECTION */
+#sidebar,
+.sidebar-container {
+  background-color: #0f0f0f;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  bottom: 0;
+  width: 72px;
+}
+
+.sidebar-menu {
+  height: 73.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: 0 4px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  transition: border 0.75s, background-color;
+}
+
+.sidebar-menu:hover {
+  background-color: #272727;
+}
+
+.sidebar-menu:active {
+  background-color: #3d3d3d;
+  border: 1px solid white;
+}
+
+.sidebar-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.sidebar-menu img {
+  height: 24px;
+  /* margin-bottom: 2px; */
+}
+
+.sidebar-menu div{
+  color: white;
+  font-size: 10px;
+}
+
 /* MAIN CONTENT SECTION */
 #main {
+  margin-top: 24px;
   font-family: Open Sans;
   padding: 20px;
+  padding-left: 92px;
   display: flex;
   justify-content: center;
 }
@@ -298,6 +381,20 @@ p {
 .thumbnail {
   width: 100%;
   border-radius: 12px;
+  position: relative;
+}
+
+.content-duration {
+  color: #f1f1f1;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px;
+  right: 5px;
+  bottom: 10px;
+  z-index: 1;
 }
 
 .content-details-grid {

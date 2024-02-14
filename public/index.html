@@ -57,13 +57,16 @@
             class="camera-create-icon"
           />
         </button>
-        <button class="notification-button">
-          <img
-            src="..\src\icons\notification.svg"
-            alt="Notification"
-            class="notification-icon"
-          />
-        </button>
+        <div class="notification-container">
+          <button class="notification-button">
+            <img
+              src="..\src\icons\notification.svg"
+              alt="Notification"
+              class="notification-icon"
+            />
+          </button>
+          <div class="notification-count"><p>9+</p></div>
+        </div>
         <img
           src="..\src\ch_img\JJ Olatunji.jpg"
           alt="Profile"
@@ -73,7 +76,50 @@
     </header>
 
     <!-- Sidebar -->
-    <aside id="sidebar"></aside>
+    <aside id="sidebar">
+      <div class="sidebar-container">
+        <div class="sidebar-menu">
+          <button>
+            <img
+              src="..\src\icons\sidebar\home.svg"
+              alt="Home"
+              class="sidebar-home-icon"
+            />
+          </button>
+          <div>Home</div>
+        </div>
+        <div class="sidebar-menu">
+          <button>
+            <img
+              src="..\src\icons\sidebar\shorts.svg"
+              alt="Shorts"
+              class="sidebar-shorts-icon"
+            />
+          </button>
+          <div>Shorts</div>
+        </div>
+        <div class="sidebar-menu">
+          <button>
+            <img
+              src="..\src\icons\sidebar\subscription.svg"
+              alt="Subscription"
+              class="sidebar-subscription-icon"
+            />
+          </button>
+          <div>Subscription</div>
+        </div>
+        <div class="sidebar-menu">
+          <button>
+            <img
+              src="..\src\icons\sidebar\you.svg"
+              alt="You"
+              class="sidebar-library-icon"
+            />
+          </button>
+          <div>You</div>
+        </div>
+      </div>
+    </aside>
 
     <!-- Main -->
     <main id="main">
@@ -81,6 +127,7 @@
         <div class="content-container-grid">
           <div class="content-container">
             <div class="thumbnail">
+              <div class="content-duration"><p>29:48</p></div>
               <img
                 src="..\src\img\KSI One Laugh One Punch.jpg"
                 alt="KSI One Laugh One Punch"
@@ -110,8 +157,9 @@
           </div>
           <div class="content-container">
             <div class="thumbnail">
+              <div class="content-duration"><p>33:09</p></div>
               <img
-                alt="KSI One Laugh One Punch"
+                alt="KSI Scary Games"
                 class="thumbnail"
                 src="..\src\img\KSI Scary Games.jpg"
               />
@@ -137,8 +185,9 @@
           </div>
           <div class="content-container">
             <div class="thumbnail">
+              <div class="content-duration"><p>13:05</p></div>
               <img
-                alt="KSI One Laugh One Punch"
+                alt="Kai Cenat Famous"
                 class="thumbnail"
                 src="..\src\img\Kai Cenat Famous.jpg"
               />
@@ -147,7 +196,7 @@
               <div class="channel-icon">
                 <img
                   src="..\src\ch_img\Kai Cenat.jpg"
-                  alt="JJ Olatunji"
+                  alt="Kai Cenat"
                   class="channel-picture"
                 />
               </div>
@@ -164,9 +213,10 @@
           </div>
           <div class="content-container">
             <div class="thumbnail">
+              <div class="content-duration"><p>0:41</p></div>
               <img
                 src="..\src\img\KSI Takes Off.jpg"
-                alt="KSI One Laugh One Punch"
+                alt="KSI Takes Off"
                 class="thumbnail"
               />
             </div>
@@ -174,7 +224,7 @@
               <div class="channel-icon">
                 <img
                   src="..\src\ch_img\Speedy Boykins.jpg"
-                  alt="JJ Olatunji"
+                  alt="Speedy Boykins"
                   class="channel-picture"
                 />
               </div>
@@ -191,6 +241,7 @@
           </div>
           <div class="content-container">
             <div class="thumbnail">
+              <div class="content-duration"><p>13:05</p></div>
               <img
                 alt="KSI One Laugh One Punch"
                 class="thumbnail"
@@ -216,7 +267,7 @@
               </div>
             </div>
           </div>
-          <div class="content-container">
+          <!-- <div class="content-container">
             <div class="thumbnail">
               <img
                 alt="KSI One Laugh One Punch"
@@ -351,6 +402,60 @@
               </div>
             </div>
           </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <img
+                alt="KSI One Laugh One Punch"
+                class="thumbnail"
+                src="..\src\img\KSI Scary Games.jpg"
+              />
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <img
+                  src="..\src\ch_img\JJ Olatunji.jpg"
+                  alt="JJ Olatunji"
+                  class="channel-picture"
+                />
+              </div>
+              <div class="content-text">
+                <p class="content-title">SCARY GAMES WITH MY BRO... LIVE!</p>
+                <p class="content-description content-author">
+                  JJ Olatunji &#10003;
+                </p>
+                <p class="content-description content-stats">
+                  991K views &#183; 2 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-container">
+            <div class="thumbnail">
+              <img
+                alt="KSI One Laugh One Punch"
+                class="thumbnail"
+                src="..\src\img\KSI Scary Games.jpg"
+              />
+            </div>
+            <div class="content-details-grid">
+              <div class="channel-icon">
+                <img
+                  src="..\src\ch_img\JJ Olatunji.jpg"
+                  alt="JJ Olatunji"
+                  class="channel-picture"
+                />
+              </div>
+              <div class="content-text">
+                <p class="content-title">SCARY GAMES WITH MY BRO... LIVE!</p>
+                <p class="content-description content-author">
+                  JJ Olatunji &#10003;
+                </p>
+                <p class="content-description content-stats">
+                  991K views &#183; 2 days ago
+                </p>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </main>
