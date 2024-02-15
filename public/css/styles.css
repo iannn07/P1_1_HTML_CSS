@@ -1,8 +1,22 @@
 /* GENERAL STYLES */
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
 body {
   margin: 0px;
   background-color: #0f0f0f;
   font-family: Roboto;
+  overflow-y: hidden;
 }
 
 p {
@@ -79,7 +93,7 @@ a {
   padding-left: 14px;
   font-size: 16px;
   border: 1px solid #272727;
-  border-radius:40px 0 0 40px;
+  border-radius: 40px 0 0 40px;
   background-color: #121212;
   color: white;
 }
@@ -101,7 +115,7 @@ a {
   width: 60px;
   height: 40px;
   border: 1px solid #272727;
-  border-radius:0 40px 40px 0;
+  border-radius: 0 40px 40px 0;
   background-color: #222222;
   cursor: pointer;
 }
@@ -261,7 +275,6 @@ a {
 }
 
 /* SIDEBAR SECTION */
-#sidebar,
 .sidebar,
 .sidebar-container {
   background-color: #0f0f0f;
@@ -269,14 +282,14 @@ a {
   top: 56px;
   left: 0;
   bottom: 0;
-  width: 240px;
+  width: 220px;
   overflow-y: auto;
   padding: 12px;
 }
 
 .sidebar-menu {
   width: 204px;
-  height: 73.5px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -329,6 +342,29 @@ a {
   font-size: 14px;
   line-height: 2rem;
   font-weight: 500;
+}
+
+.sm-after-divider {
+  margin: 0 0 0 -12px;
+}
+
+.sm-divider {
+  background-color: #3d3d3d;
+  height: 1px;
+  z-index: 10;
+  max-width: auto;
+  margin: 12px 0 0 0;
+}
+
+.sm-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 25px 10px 25px;
+}
+
+.sm-after-divider .sidebar-menu {
+  margin: 0 0 0 12px;
 }
 
 /* MAIN CONTENT SECTION */
@@ -549,6 +585,10 @@ a {
   .sidebar-menu div {
     color: white;
     font-size: 10px;
+  }
+
+  .sm-after-divider {
+    display: none;
   }
 
   #main,
