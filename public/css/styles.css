@@ -16,7 +16,7 @@ body {
   margin: 0px;
   background-color: #0f0f0f;
   font-family: Roboto;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 p {
@@ -288,7 +288,7 @@ a {
 }
 
 .sidebar-menu {
-  width: 204px;
+  width: 210px;
   height: 40px;
   display: flex;
   align-items: center;
